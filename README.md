@@ -56,10 +56,4 @@ O projeto foi construído com foco em boas práticas de desenvolvimento web, sep
 3.  **Abra o arquivo `index.html`** no seu navegador de preferência.
     - Para uma melhor experiência de desenvolvimento, recomenda-se usar uma extensão como o **Live Server** no VS Code.
 
----
 
-## 👤 Autor
-
-**Camile Santana**
-- GitHub: @seu-usuario
-- LinkedIn: Seu Perfil
