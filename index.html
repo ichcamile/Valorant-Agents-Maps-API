@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant - Galeria de Agentes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <a href="#" class="valorant-logo">
+                <img src="assets/Valorant-Logo-PNG-Cutout.png" alt="Logo do Valorant">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#galeria-de-agentes" class="active">Agentes</a></li>
+                    <li><a href="#mapas">Mapas</a></li>
+                    <li><a href="https://valorant-api.com/" target="_blank" rel="noopener noreferrer">API</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <img src="https://static.valorantzone.gg/news/2020/06/01103346/lan%C3%A7amento-valorant-brasil.jpeg" alt="Agentes do Valorant" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>AGENTES</h1>
+            <p>A criatividade é sua melhor arma. Explore a lista completa de agentes, suas funções e habilidades únicas.</p>
+        </div>
+    </section>
+
+    <main id="galeria-de-agentes">
+        <div class="filter-container">
+            <input type="text" id="filter-name" placeholder="Filtar por nome...">
+            <select id="filter-role">
+                <option value="all">Todas as Funções</option>
+                <option value="Duelista">Duelista</option>
+                <option value="Controlador">Controlador</option>
+                <option value="Iniciador">Iniciador</option>
+                <option value="Sentinela">Sentinela</option>
+            </select>
+        </div>
+
+        <div id="agent-gallery-container">
+            <h2>Carregando Agentes...</h2>
+        </div>
+    </main>
+
+    <section id="mapas" class="map-section">
+        <div class="map-content">
+            <h2>Sorteio de Mapas</h2>
+            <p>Selecione os mapas que deseja incluir no sorteio e clique em sortear.</p>
+            <div id="map-checkboxes">
+            </div>
+            <button id="sortear-mapa-btn">Sortear</button>
+            <div id="mapa-sorteado-container" style="display: none;">
+                <h3>O mapa selecionado é:</h3>
+                <div id="mapa-sorteado-card">
+                    <img id="mapa-sorteado-img" src="" alt="Mapa Sorteado">
+                    <span id="mapa-sorteado-nome"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Camile Santana</p>
+        <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">Meu GitHub</a>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+
+</body>
+</html>
